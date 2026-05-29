@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0b0c;
+    color: #e3e3e6;
+    min-height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.portfolio {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #131316;
+}
+
+.sidebar {
+    width: 16.88vw;
+    background-color: #0e0e11;
+    border-right: .05vw solid #222227;
+    padding: 2.11vw 3.16vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2.11vw;
+}
+
+.profileHeader h1 {
+    font-size: 2.11vw;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: -0.03vw;
+}
+
+.subtitle {
+    color: #8a8a93;
+    font-size: 0.93vw;
+    margin-top: .63vh;
+}
+
+.status {
+    display: inline-block;
+    background-color: rgba(45, 212, 123, 0.1);
+    color: #2dd475;
+    font-size: 0.68vw;
+    font-weight: 600;
+    padding: .63vw 1.47vh;
+    border-radius: .84vw;
+    margin-top: 1.68vh;
+    border: .05vw solid rgba(45, 212, 151, 0.2);
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    gap: .84vh;
+}
+
+.tabButton {
+    background: none;
+    border: none;
+    color: rgb(144, 144, 144);
+    font-size: 0.89vw;
+    font-weight: 600;
+    padding: .63vw 1.68vh;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 0.42vw;
+    transition:
+        color 0.2s ease,
+        background-color .2s ease;
+}
+
+
+.tabButton:hover{
+    color: #ffffff;
+    background-color: #1c1c21
+}
+
+.tabButton.active{
+    color: #ffffff;
+    background-color: #22222f
+}
+
+.content {
+    flex: 1;
+    padding: 2.64vw;
+    overflow-y: auto;
+}
+
+.sectionTitle {
+    font-size: 1.52vw;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 3.16vh;
+    border-bottom: 0.11vh solid #222227;
+    padding-bottom: 1.58vh
+}
+
+.tabContent {
+    display: none;
+}
+
+.tabContent.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow: hidden;
+    }
+
+    .portfolio {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        background-color: #131316;
+    }
+
+    .sidebar {
+        width: 25.88vw;
+        background-color: #0e0e11;
+        border-right: .05vw solid #222227;
+        padding: 2.11vw 3.16vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2.11vw;
+    }
+
+    .profileHeader h1 {
+        font-size: 5.11vw;
+        color: #ffffff;
+        font-weight: 700;
+        letter-spacing: -0.03vw;
+    }
+
+    .subtitle {
+        color: #8a8a93;
+        font-size: 2.2vw;
+        margin-top: .63vh;
+    }
+
+    .status {
+        display: inline-block;
+        background-color: rgba(45, 212, 123, 0.1);
+        color: #2dd475;
+        font-size: 1.68vw;
+        font-weight: 600;
+        padding: .83vh 1.47vh;
+        border-radius: 50vw;
+        margin-top: 2.68vh;
+        border: .05vw solid rgba(45, 212, 151, 0.2);
+    }
+
+    .tabs {
+        display: flex;
+        flex-direction: column;
+        gap: .84vh;
+    }
+
+    .tabButton {
+        background: none;
+        border: none;
+        color: rgb(144, 144, 144);
+        font-size: 1.89vw;
+        font-weight: 600;
+        padding: .63vw 1.68vh;
+        text-align: left;
+        cursor: pointer;
+        border-radius: 0.42vw;
+        transition:
+            color 0.2s ease,
+            background-color .2s ease;
+    }
+
+    .tabButton:hover{
+        color: #ffffff;
+        background-color: #1c1c21
+    }
+
+    .tabButton.active{
+        color: #ffffff;
+        background-color: #22222f
+    }
+}

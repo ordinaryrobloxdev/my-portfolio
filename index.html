@@ -1,9 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pan's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>under construction</p>
+    <div class="portfolio">
+        <aside class="sidebar">
+
+            <header class="profileHeader">
+                <h1>Pan</h1>
+                <p class="subtitle">Roblox Studio Scripter</p>
+                <div class="status">Available for Commissions</div>
+            </header>
+
+            <nav class="tabs">
+                <button class="tabButton active" data="projects">
+                    Projects
+                </button>
+                <button class="tabButton" data="about">
+                    About & Terms
+                </button>
+            </nav>
+
+        </aside>
+
+        <main class="content">
+            <div id="projects" class="tabContent active">
+                <div class="sectionTitle">My projects</div>
+            </div>
+        </main>
+
+    </div>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
